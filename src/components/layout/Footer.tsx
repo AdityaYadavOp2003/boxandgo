@@ -51,7 +51,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-white mb-16 md:mb-0" role="contentinfo">
+    <footer className="bg-primary text-white">
       <div className="border-b border-white/10">
         <div className="page-container py-10 sm:py-14">
           <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-12">
@@ -166,7 +166,7 @@ export default function Footer() {
         </div>
       </div>
 
-        <div className="page-container py-5 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-neutral-500 text-center md:text-left">
+      <div className="page-container border-t border-white/10 py-2 flex flex-col md:flex-row items-center justify-between gap-2 text-sm text-neutral-500 text-center md:text-left">
         <p>&copy; {year} {COMPANY_NAME}. All rights reserved.</p>
         <div className="flex items-center gap-4">
           <Link href="/contact" className="hover:text-accent transition-colors">

@@ -1,7 +1,6 @@
 'use client';
 
 import { memo } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { m } from 'framer-motion';
 import {
@@ -31,8 +30,6 @@ import {
   heroFormEnter,
 } from '@/lib/motion';
 
-const HERO_IMAGE = '/boxngo.jpg';
-
 const trustBadges = [
   { icon: BadgeCheck, label: 'GST Verified' },
   { icon: Shield, label: 'Fully Insured' },
@@ -49,17 +46,10 @@ function HeroSection() {
   return (
     <section id="hero" className="hero-section" aria-label="Hero">
       <div className="hero-section__bg" aria-hidden>
-        <Image
-          src={HERO_IMAGE}
-          alt=""
-          fill
-          preload
-          quality={75}
-          className="hero-section__image"
-          sizes="100vw"
-        />
-        <div className="hero-section__image-overlay" />
-        <div className="hero-section__image-vignette" />
+        <div className="hero-section__image" />
+        <div className="hero-section__overlay hero-section__overlay--base" />
+        <div className="hero-section__overlay hero-section__overlay--gradient" />
+        <div className="hero-section__overlay hero-section__overlay--vignette" />
       </div>
 
       <div className="hero-section__decor">

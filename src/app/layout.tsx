@@ -111,7 +111,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col antialiased overflow-x-hidden">
         <MotionProvider>
           <Header />
-          <main className="flex-1 w-full min-w-0 pb-[calc(4rem+env(safe-area-inset-bottom))] md:pb-0">
+          <main className="flex-1 w-full min-w-0">
             {children}
           </main>
           <Footer />

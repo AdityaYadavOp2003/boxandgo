@@ -11,7 +11,7 @@ function WhatsAppFloat() {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className="whatsapp-float group"
+      className="whatsapp-float group hidden sm:flex"
       aria-label="Chat with us on WhatsApp"
     >
       <svg

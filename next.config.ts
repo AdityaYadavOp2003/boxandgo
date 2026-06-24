@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // Allow phone/tablet testing on the same Wi‑Fi (update IP if it changes)
-  allowedDevOrigins: ['10.178.144.42'],
+  allowedDevOrigins: ['10.216.56.42'],
   async redirects() {
     return [
       {
